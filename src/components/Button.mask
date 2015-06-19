@@ -1,0 +1,9 @@
+define Button {
+	
+	button.btn.@[attr.class || 'btn-default'] style='@attr.style' {
+        @if (attr.glyph) {
+			i.glyphicon.glyphicon-@[attr.glyph];
+		}
+        @placeholder;
+    }
+}

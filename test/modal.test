@@ -1,0 +1,34 @@
+UTest({
+	$config: {
+		timeout: 2000
+	},
+	'!test modal component' (done) {
+		UTest
+			.server
+			.request('/examples/modal.html')
+			.done((document, window) => {
+				
+				debugger
+				UTest.domtest.compo(window.app);
+			})
+	},
+	'test inherited component' (done) {
+		UTest
+			.server
+			.request('/examples/inheritance.html')
+			.done(document => {
+				
+				var $dom = $(document).hasNot_('button');
+
+				$dom.find('#messages').hasNot_('text', '`onRenderEnd`');
+				setTimeout(() => {
+					$dom
+						.has_('button')
+						.find('#messages')
+						.has_('text', '`onRenderEnd`')
+						;
+					done();
+				}, 1400);
+			})
+	},
+})

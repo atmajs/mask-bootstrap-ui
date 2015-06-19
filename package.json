@@ -1,0 +1,23 @@
+{
+    "name": "mask-bootstrap-ui",
+    "version": "0.0.0",
+    "dependencies": {
+        "maskjs": "latest"
+    },
+    "devDependencies": {
+        "atma-loader-babel": "latest"
+    },
+    "atma": {
+        "settings": {
+            "atma-loader-babel": {
+                "extensions": [
+                    "test",
+                    "es6"
+                ]
+            }
+        },
+        "plugins": [
+            "atma-loader-babel"
+        ]
+    }
+}

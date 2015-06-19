@@ -1,0 +1,11 @@
+{
+  "name": "mask-bootstrap-ui",
+  "version": "0.0.0",
+  "main": [
+    "lib/bootstrap-ui.js"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.0",
+    "maskjs": "~0.51.27"
+  }
+}
