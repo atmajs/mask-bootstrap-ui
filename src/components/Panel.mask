@@ -1,15 +1,13 @@
-let Panel {
-	.panel  {
-		@header {
-			.panel-heading > @placeholder;
-		}
-		@title {
-			.panel-heading > h3.panel-title > @placeholder;
-		}
-		.panel-body > @body required;
-		
-		@footer {
-			.panel-footer > @placeholder;
-		}
+let Panel as (.panel) {	
+	@header {
+		.panel-heading > @placeholder;
+	}
+	@title {
+		.panel-heading > h3.panel-title > @placeholder;
+	}
+	.panel-body > @body required;
+	
+	@footer {
+		.panel-footer > @placeholder;
 	}
 }
